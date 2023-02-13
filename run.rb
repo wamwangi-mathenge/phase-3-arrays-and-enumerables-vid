@@ -60,7 +60,7 @@ suvs = [
     },
     {
         name: "Urus",
-        price: 45000000,
+        price: 55000000,
         brand: "Lamboghini",
         origin: "Italy",
         engine: "4.0L V8"
@@ -115,5 +115,14 @@ end
 
 # max
 # finds the highest value
+max_price = suvs.max do |s|
+    s[:price]
+end
+
+# min
+# finds the lowest value
+min_price = suvs.min do |s|
+    s[:price]
+end
 
 binding.pry
