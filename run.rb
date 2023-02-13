@@ -107,4 +107,13 @@ brand = suvs.find do |s|
     s[:brand] == "Bentley"
 end
 
+#sum - reduce in JS
+# sums up the total
+total = suvs.sum do |s|
+    s[:price]
+end
+
+# max
+# finds the highest value
+
 binding.pry
