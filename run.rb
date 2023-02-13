@@ -94,12 +94,17 @@ end
 # select / filter
 # filters out elements based on condition
 cheaper = suvs.select do |s|
-    binding.pry
     s[:price] < 25000000
 end
 
 expensive = suvs.select do |s|
     s[:price] > 40000000
+end
+
+# find
+# finds first element based on condition
+brand = suvs.find do |s|
+    s[:brand] == "Bentley"
 end
 
 binding.pry
