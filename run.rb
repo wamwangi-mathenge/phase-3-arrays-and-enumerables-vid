@@ -84,3 +84,11 @@ def print_suvs
         puts s
     end
 end
+
+#collect / map
+#loops through an array and returns a new array based on condition
+name = suvs.collect do |s|
+    s[:name]
+end
+
+binding.pry
