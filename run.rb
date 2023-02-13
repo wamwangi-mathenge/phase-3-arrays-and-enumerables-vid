@@ -91,4 +91,15 @@ name = suvs.collect do |s|
     s[:name]
 end
 
+# select / filter
+# filters out elements based on condition
+cheaper = suvs.select do |s|
+    binding.pry
+    s[:price] < 25000000
+end
+
+expensive = suvs.select do |s|
+    s[:price] > 40000000
+end
+
 binding.pry
